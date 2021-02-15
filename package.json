@@ -18,6 +18,9 @@
     "gulp-terser": "^1.4.0",
     "postcss": "^8.1.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gulp-connect": "^5.7.0",
+    "gulp-open": "^3.0.1"
+  },
   "description": ""
 }

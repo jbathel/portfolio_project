@@ -40,3 +40,31 @@
     margin-bottom: 4rem;
   }
 }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  h2 {
+    grid-column: 1 / -1;
+    color: $color-secondary;
+  }
+
+  &__group {
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    &--message {
+      width: 100%;
+    }
+  }
+}
+
+.full {
+  grid-column: 1 / -1;
+}

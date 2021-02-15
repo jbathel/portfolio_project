@@ -47,6 +47,11 @@ body {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
 .container {
   display: grid;
   grid-template-rows: 100vh 40vw repeat(2, min-content) 40vw min-content;
