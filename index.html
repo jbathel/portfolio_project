@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/f11c4dbebd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>nexter &mdash; your home, your freedom</title>
+  </head>
+
+  <body class="container">
+    <!-- Navigation -->
+    <div class="sidebar">
+      <button class="nav-btn"></button>
+    </div>
+
+    <header class="header">
+      <img src="./img/logo2.svg" alt="Jessica Bathel logo" class="header__logo" />
+
+      <h3 class="heading-3">Jessica Bathel</h3>
+      <h1 class="heading-1">I am Jessica a <span class="txt-type" data-wait="2000" data-words='["Mother", "Artist", "Student", "Front-End Developer", "Full-Stack Web Developer Hopeful"]'></span></h1>
+
+      <div class="header__btns">
+        <a href="#" class="btn header__btn">View My Work</a>
+        <a href="#story__blurb" class="btn header__btn">Read My Story</a>
+      </div>
+    </header>
+
+    <!-- My Story -->
+    <div class="story__pictures">
+      <!-- <img src="./img/potfolio_temp_pic.jpg" alt="Couple with new house" class="story__img--1" /> -->
+      <!-- <img src="./img/potfolio_temp_pic.jpg" alt="New house" class="story__img--2" /> -->
+    </div>
+
+    <div id="story__blurb" class="story__content">
+      <h2 class="heading-2 heading-2--dark mb-md">&ldquo;It always seems impossible until it is done&rdquo;</h2>
+      <h3 class="heading-3 mb-sm">- Nelson Mandela</h3>
+      <p class="story__text">A Registered Veterinary Technician, with twelve years of experience, who is now pursuing a role in Software Engineering. Professional experience in dealing with high-stress environments that require quick judgement, collaboration, and attention to detail. Recently has trained in a software engineering program based in self-teaching methodology.</p>
+      <button class="btn">Read More About Me</button>
+    </div>
+
+    <!-- My Education -->
+    <section class="features">
+      <h2 class="heading-2">Education</h2>
+      <!-- Udemy -->
+      <div class="feature">
+        <i class="feature__icon fas fa-laptop-code fa-3x"></i>
+        <h4 class="heading-4 heading-4--dark">Udemy and Online Course</h4>
+        <h3 class="heading-3">Gig Harbor, WA</h3>
+        <h2 class="heading-3">May 2020 to Current</h2>
+        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, corrupti iusto officiis dolore mollitia ratione debitis sapiente dicta velit inventore?</p>
+      </div>
+      <!-- Holberton -->
+      <div class="feature">
+        <i class="feature__icon fas fa-code fa-3x"></i>
+        <h4 class="heading-4 heading-4--dark">Holberton School</h4>
+        <h3 class="heading-3">San Francisco, CA</h3>
+        <h2 class="heading-3">Completed Year One May 2020</h2>
+        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
+      </div>
+      <!-- Western Career College -->
+      <div class="feature">
+        <i class="feature__icon fas fa-stethoscope fa-3x"></i>
+        <h4 class="heading-4 heading-4--dark">Western Career College</h4>
+        <h3 class="heading-3">San Leandro, CA</h3>
+        <h2 class="heading-3">Graduated 2004</h2>
+        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
+      </div>
+    </section>
+
+    <!-- My Work History -->
+    <section class="homes">
+      <!-- Github Finder -->
+      <div class="home">
+        <img src="./img/github-finder.png" alt="House 1" class="home__img" />
+        <h5 class="home__name">Beautiful Family House</h5>
+        <div class="home__location">
+          <p>React application using Github API,coursework from Udemy</p>
+        </div>
+        <a href="https://gitfinder2020.netlify.app/" target="_blank" class="btn home__btn">Visit Site</a>
+      </div>
+      <!-- Expanding Cards -->
+      <div class="home">
+        <img src="./img/expanding-cards.png" alt="House 1" class="home__img" />
+        <h5 class="home__name">Expanding Cards</h5>
+        <div class="home__location">
+          <p>Javascript project completed following Udemy course.</p>
+        </div>
+        <a href="https://quirky-heyrovsky-12f271.netlify.app/" target="_blank" class="btn home__btn">View Site</a>
+      </div>
+      <!-- Little Foot Trails -->
+      <div class="home">
+        <img src="./img/little-foot-trails.png" alt="House 1" class="home__img" />
+        <h5 class="home__name">Little Foot Trails</h5>
+        <div class="home__location">
+          <p>Web application that helps families find trails and outdoor activities.</p>
+        </div>
+        <a href="https://little-foot-trails.herokuapp.com/" target="_blank" class="btn home__btn">View Site</a>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+    <div class="contact__content">
+      <div class="contact__form">
+        <form action="#" class="form">
+          <h2 class="heading-2 heading-2--dark mb-md">Contact Me</h2>
+          <div class="form__group">
+            <input type="text" class="form__input" id="name" placeholder="Name" required />
+            <label for="name" class="form__label">Name</label>
+          </div>
+          <div class="form__group">
+            <input type="text" class="form__input" id="company" placeholder="Company Name" required />
+            <label for="company " class="form__label">Company Name</label>
+          </div>
+          <div class="form__group">
+            <input type="email" class="form__input" id="email" placeholder="Email Address" required />
+            <label for="email" class="form__label">Email</label>
+          </div>
+          <div class="form__group">
+            <input type="email" class="form__input" id="phone" placeholder="Phone Number" required />
+            <label for="email" class="form__label">Phone Number</label>
+          </div>
+          <div class="form__group">
+            <textarea name="message" rows="5" class="form__input" id="email" placeholder="Message" required></textarea>
+            <label for="email" class="form__label">Message</label>
+          </div>
+        </form>
+        <h3 class="heading-3 mb-sm">Follow On Social</h3>
+        <p class="contact__text">Social Icons Here</p>
+      </div>
+      <button class="btn">Submit</button>
+    </div>
+
+    <div class="contact__pictures"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- <ul class="nav">
+        <li class="nav__item"><a href="# " class="nav__link">find your dream home</a></li>
+        <li class="nav__item"><a href="# " class="nav__link">request proposal</a></li>
+        <li class="nav__item"><a href="# " class="nav__link">download home planner</a></li>
+        <li class="nav__item"><a href="# " class="nav__link">contact us</a></li>
+        <li class="nav__item"><a href="# " class="nav__link">submit your property</a></li>
+        <li class="nav__item"><a href="# " class="nav__link">come work with us!</a></li>
+      </ul> -->
+      <p class="copyright">&copy; Copyright 2017 by Jonas Schmedtmann. Feel free to use this project for your own purposes. This does NOT apply if you plan to produce your own course or tutorials based on this project.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>
