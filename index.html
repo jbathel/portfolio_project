@@ -16,17 +16,28 @@
   <body class="container">
     <!-- Navigation -->
     <div class="sidebar">
-      <button class="nav-btn"></button>
+      <a href="#" class="nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <!-- <div class="nav-links">
+        <a href="" class="nav-link">Home</a>
+        <a href="" class="nav-link">My Story</a>
+        <a href="" class="nav-link">Education</a>
+        <a href="" class="nav-link">Projects</a>
+        <a href="" class="nav-link">Contact Me</a>
+      </div> -->
     </div>
 
     <header class="header">
       <img src="./img/logo2.svg" alt="Jessica Bathel logo" class="header__logo" />
 
       <h3 class="heading-3">Jessica Bathel</h3>
-      <h1 class="heading-1">I am Jessica a <span class="txt-type" data-wait="2000" data-words='["Mother", "Artist", "Student", "Front-End Developer", "Full-Stack Web Developer Hopeful"]'></span></h1>
+      <h1 class="heading-1">I am <span class="txt-type" data-wait="1500" data-words='["a Mother", " an Artist", "a Student", "a Front-End Developer", "a Full-Stack Web Developer Hopeful"]'></span></h1>
 
       <div class="header__btns">
-        <a href="#" class="btn header__btn">View My Work</a>
+        <a href="#projects" class="btn header__btn">View My Work</a>
         <a href="#story__blurb" class="btn header__btn">Read My Story</a>
       </div>
     </header>
@@ -45,38 +56,43 @@
     </div>
 
     <!-- My Education -->
-    <section class="features">
-      <h2 class="heading-2 heading-2--break">Education</h2>
+    <section class="experiences">
+      <h2 class="heading-2 heading-2 break">Education</h2>
+      <div class="education__blurb">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis esse atque et qui doloremque magnam quod similique quisquam voluptate suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ipsa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores impedit cum aperiam. Odio animi adipisci optio dignissimos nostrum. Repellat hic adipisci eius ex blanditiis explicabo fugit alias autem tempora.</p>
+      </div>
       <!-- Udemy -->
-      <div class="feature">
-        <i class="feature__icon fas fa-laptop-code fa-3x"></i>
+      <div class="education">
+        <i class="education__icon fas fa-laptop-code fa-3x"></i>
         <h4 class="heading-4 heading-4--dark">Udemy and Online Course</h4>
         <h3 class="heading-3">Gig Harbor, WA</h3>
         <h2 class="heading-3">May 2020 to Current</h2>
-        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, corrupti iusto officiis dolore mollitia ratione debitis sapiente dicta velit inventore?</p>
+        <p class="education__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, corrupti iusto officiis dolore mollitia ratione debitis sapiente dicta velit inventore?</p>
       </div>
       <!-- Holberton -->
-      <div class="feature">
-        <i class="feature__icon fas fa-code fa-3x"></i>
+      <div class="education">
+        <i class="education__icon fas fa-code fa-3x"></i>
         <h4 class="heading-4 heading-4--dark">Holberton School</h4>
         <h3 class="heading-3">San Francisco, CA</h3>
         <h2 class="heading-3">Completed Year One May 2020</h2>
-        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
+        <p class="education__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
       </div>
       <!-- Western Career College -->
-      <div class="feature">
-        <i class="feature__icon fas fa-stethoscope fa-3x"></i>
+      <div class="education">
+        <i class="education__icon fas fa-stethoscope fa-3x"></i>
         <h4 class="heading-4 heading-4--dark">Western Career College</h4>
         <h3 class="heading-3">San Leandro, CA</h3>
         <h2 class="heading-3">Graduated 2004</h2>
-        <p class="feature__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
+        <p class="education__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis amet iste eligendi architecto perferendis et in laborum sint iusto.</p>
       </div>
     </section>
 
     <!-- My Work History and Projects -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <div class="projects__text">
-        <h2 class="heading-2 heading-2--break">My Projects</h2>
+        <h2 class="heading-2 break">My Projects</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias repudiandae, tenetur excepturi delectus maxime, accusamus praesentium aliquam ex, aut cum eligendi illum! Aperiam labore, dolorum ullam est eligendi sit aut iure. Tenetur harum, perferendis sed, accusamus labore repellat ipsa aspernatur corporis autem, expedita laborum ex aliquid consequuntur eius facilis. Quas delectus vel hic. Autem reprehenderit optio repudiandae ratione dolores!</p>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque quo illum et mollitia ut in ipsam tempore, repellat quas magni ad saepe quam repellendus debitis earum facere nihil odit nostrum consequuntur voluptates perspiciatis! Iure dolores sunt eos id neque eius facere commodi excepturi laborum voluptas!</p>
       </div>
@@ -143,12 +159,12 @@
           <button class="btn full mb-sm">Submit</button>
         </form>
         <div>
-          <h3 class="contact__text--social heading-3 mb-sm">Follow On Social</h3>
+          <h3 class="contact__text break heading-3 mb-sm">Follow On Social</h3>
           <div class="contact__icons">
-            <i class="fab fa-github fa-4x"></i>
-            <i class="fab fa-instagram fa-4x"></i>
-            <i class="fab fa-twitter fa-4x"></i>
-            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-github fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
+            <i class="fab fa-twitter fa-3x"></i>
+            <i class="fab fa-facebook fa-3x"></i>
           </div>
         </div>
       </div>

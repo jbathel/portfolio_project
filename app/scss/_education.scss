@@ -1,4 +1,4 @@
-.features {
+.experiences {
   grid-column: center-start / center-end;
 
   margin: 15rem 0;
@@ -6,6 +6,7 @@
   display: grid;
   // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: min-content repeat(3, 1fr);
   grid-gap: 6rem;
   align-items: start;
 
@@ -14,12 +15,24 @@
   }
 }
 
-.feature {
+.education {
   grid-column: 2 / -1;
   display: grid;
   // grid-template-columns: min-content 1fr;
   row-gap: 1.5rem;
   column-gap: 2.5rem;
+
+  &__blurb {
+    grid-row: 2 / -1;
+    text-align: justify;
+    background-color: $color-secondary;
+    color: #fff;
+    padding: 1em;
+
+    & p {
+      padding: 1em;
+    }
+  }
 
   &__icon {
     color: $color-primary;

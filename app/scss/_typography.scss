@@ -23,22 +23,6 @@
   &--dark {
     color: $color-grey-dark-1;
   }
-
-  &--break {
-    margin-bottom: 1em;
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-    grid-column-gap: 1.5rem;
-    align-items: center;
-
-    &::before,
-    &::after {
-      content: '';
-      height: 1px;
-      display: block;
-      background-color: currentColor;
-    }
-  }
 }
 
 .heading-3 {
@@ -75,6 +59,22 @@
 
   &:hover {
     background-color: $color-primary-dark;
+  }
+}
+
+.break {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: '';
+    height: 1px;
+    display: block;
+    background-color: currentColor;
   }
 }
 
