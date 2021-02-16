@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
   color: #1e1e1e;
   font-weight: 300;
   line-height: 1.6; }
@@ -55,6 +56,18 @@ a {
     color: #f9f7f6; }
   .heading-2--dark {
     color: #454545; }
+  .heading-2--break {
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr -webkit-max-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center; }
+    .heading-2--break::before, .heading-2--break::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: currentColor; }
 
 .heading-3 {
   font-size: 1.6rem;
@@ -221,6 +234,8 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
   align-items: start; }
+  .features h2 {
+    grid-column: 1 / -1; }
 
 .feature {
   grid-column: 2 / -1;
@@ -275,34 +290,33 @@ a {
   font-style: italic;
   margin-bottom: 4rem; }
 
-.homes {
+.projects {
   grid-column: center-start / center-end;
   margin: 15rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 7rem; }
+  .projects__text {
+    grid-column: 1 / -1; }
+    .projects__text p {
+      text-align: justify;
+      padding: 0;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em; }
 
-.home {
+.project {
   background-color: #f9f7f6;
   box-shadow: 0 0 2rem rgba(30, 30, 30, 0.7);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3.5rem; }
-  .home__img {
+  .project__img {
     width: 100%;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     z-index: 1; }
-  .home__like {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-    fill: #14a1a8;
-    height: 2.5rem;
-    width: 2.5rem;
-    justify-self: end;
-    margin: 1rem;
-    z-index: 2; }
-  .home__name {
+  .project__name {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
     justify-self: center;
@@ -317,20 +331,13 @@ a {
     background-color: #343959;
     color: #fff;
     transform: translateY(50%); }
-  .home__location, .home__rooms {
-    margin-top: 2.5rem; }
-  .home__location, .home__rooms, .home__area, .home__price {
+  .project__location {
+    grid-column: 1 / -1;
+    margin-top: 2.5rem;
     font-size: 1.5rem;
     margin-left: 2rem;
     display: flex;
     align-items: center; }
-    .home__location svg, .home__rooms svg, .home__area svg, .home__price svg {
-      fill: #14a1a8;
-      height: 2rem;
-      width: 2rem;
-      margin-right: 1rem; }
-  .home__btn {
-    grid-column: 1 / -1; }
 
 .contact__pictures {
   background-color: #14a1a8;
@@ -378,6 +385,8 @@ a {
   color: #14a1a8;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
   -moz-column-gap: 2rem;
        column-gap: 2rem; }
 
